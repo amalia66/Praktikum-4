@@ -1,0 +1,243 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #d3d3d3;
+    color: #536186;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header {
+    background: #536186;
+    color: #c0c0c0;
+    padding: 20px 10px;
+}
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #c0c0c0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    padding: 5px;
+}
+nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+nav a.active {
+    text-decoration: underline;
+}
+section {
+    background-color: #c0c0c0;
+    padding: 20px;
+    margin: 20px;
+}
+section h2 {
+    color: #536186;
+    margin-bottom: 15px;
+}
+#about {
+    background-color: #c0c0c0;
+    padding: 20px 20px;
+    margin: 20px;
+}
+#about h2 {
+    text-align: center;
+    color: #536186;
+    margin-bottom: 20px;
+}
+.about-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.about-left {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.about-left p {
+    margin-bottom: 10px;
+}
+.about-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.image-placeholder {
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    background-color: #fdfdfd;
+}
+.about-right {
+    flex: 2;
+    min-width: 300px;
+    text-align: justify;
+    color: #536186;
+    font-size: 20px;
+}
+#project {
+    padding: 20px;
+    background-color: #c0c0c0;
+}  
+#project h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #536186;
+}  
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.project-left {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+.project-left h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #536186;
+    margin-bottom: 10px;
+}
+.project-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.project-right {
+    flex: 2;
+    min-width: 300px;
+    font-size: 20px;
+    text-align: justify;
+    color: #536186;
+    line-height: 1.8;
+}
+#skills {
+    background-color: #c0c0c0;
+    padding: 20px;
+    text-align: center;
+}  
+#skills h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #536186;
+}  
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}  
+.skill-card {
+    background-color: #536186;
+    color: #c0c0c0;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.skill-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}  
+.skill-card p {
+    font-size: 14px;
+    color: #dcdcdc;
+}  
+#media {
+    background-color: #c0c0c0;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#media h2 {
+    margin-bottom: 20px;
+}
+.video, .audio {
+    margin-bottom: 20px;
+}
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+audio {
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+button {
+    padding: 10px;
+    background-color: #536186;
+    color: #d3d3d3;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #536186;
+}
+footer {
+    text-align: center;
+    background-color: #536186;
+    color: #c0c0c0;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
