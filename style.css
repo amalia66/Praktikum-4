@@ -60,10 +60,15 @@ nav a:hover {
 nav a.active {
     text-decoration: underline;
 }
+* {
+    box-sizing: border-box;
+}
 section {
     background-color: #c0c0c0;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1000px; 
+    border-radius: 12px;
 }
 section h2 {
     color: #536186;
@@ -71,8 +76,7 @@ section h2 {
 }
 #about {
     background-color: #c0c0c0;
-    padding: 20px 20px;
-    margin: 20px;
+    padding: 20px;
 }
 #about h2 {
     text-align: center;
@@ -142,6 +146,10 @@ section h2 {
     color: #536186;
     line-height: 1.8;
 }
+.about-container, .project-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 #skills {
     background-color: #c0c0c0;
     padding: 20px;
@@ -184,8 +192,11 @@ section h2 {
 #media h2 {
     margin-bottom: 20px;
 }
-.video, .audio {
-    margin-bottom: 20px;
+video, audio {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
 video {
     width: 100%;
